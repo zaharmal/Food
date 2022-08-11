@@ -3,4 +3,162 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+    &__menu {
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      margin-bottom: 80px;
+    }
+		&__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+		&__desc {
+      text-align: center;
+    }
+		&__title {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 84px;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      span {
+        font-weight: 300;
+      }
+    }
+		&__subtitle {
+      width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 26px;
+      color: rgba(255, 255, 255, .7);
+      margin-bottom: 65px;
+    }
+		&__btn {
+      background-color: $primary;
+      color: #1A1A1A;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 25px 57px;
+      border-radius: 43px;
+    }
+		&__list {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 95px;
+    }
+		&__item-img {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+		&__item-title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+		&__item-subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(255, 255, 255, .5);
+    }
+}
+.menu {
+		&__list {
+      display: flex;
+    }
+    &__item {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 90px;
+    }
+		&__item + .menu__item {
+      margin-left: 45px;
+    }
+		&__link {
+      color: #fff;
+      transition: color .3s linear;
+      &:hover {
+        color: $primary;
+      }
+    }
+}
+
+.about {
+  margin-bottom: 90px;
+    &__desc {
+      background-color: $dark;
+      border-radius: 6px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    &__title {
+      &::before {
+        content: 'The Basics Of Healthy Food';
+      }
+    }
+		&__text {
+      max-width: 735px;
+      margin: 0 auto;
+      text-align: center;
+      color: #A6A6A6;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 90px;
+    }
+}
+.about-slider {
+  padding-bottom: 90px;
+		&__item {
+      display: flex !important;
+      justify-content: space-between;
+      max-width: 735px;
+      margin: 0 auto;
+    }
+}
+
+.work {
+  margin-bottom: 120px;
+		&__title {
+      margin-bottom: 90px;
+      &::before {
+        content: 'How It Works'
+      }
+    }
+		&__desc {
+      display: flex;
+      justify-content: space-between;
+    }
+		&__item {
+      background-color: $dark;
+      width: 255px;
+    }
+		&__item-title {
+      font-size: 22px;
+      line-height: 26px;
+      padding: 24px 24px 36px;
+      position: relative;
+      text-transform: capitalize;
+      &::after {
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid $primary;
+        height: 2px;
+        width: 56px;
+        top: 60px;
+        left: 24px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+		&__item-text {
+      padding-left: 24px;
+      padding-right: 31px;
+      padding-bottom: 42px;
+    }
+}
 @import 'media';
