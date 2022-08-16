@@ -8,4 +8,9 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="images/about/arrow-right.svg" alt=""></button>',
   });
 
+  $(".dishes__item-star").rateYo({
+    starWidth: "20px",
+    normalFill: "#4D4D4D"
+  });
+
 });
