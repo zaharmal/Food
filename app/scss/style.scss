@@ -259,4 +259,43 @@
       }
     }
 }
+
+.chefs {
+  margin-bottom: 120px;
+		&__title {
+      margin-bottom: 90px;
+      &::before {
+        content: "This month's chefs";
+      }
+    }
+		&__team {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 24px;
+    }
+		&__user {
+      display: flex;
+      align-items: center;
+      width: 350px;
+    }
+		&__avatar {
+      border-radius: 50%;
+      margin-right: 24px;
+    }
+		&__name {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+		&__prof {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+		&__work {
+      display: flex;
+      justify-content: space-between;
+    }
+}
 @import 'media';
