@@ -422,4 +422,79 @@
       margin-right: 12px;
     }
 }
+
+.social {
+  margin-bottom: 120px;
+		&__title {
+      margin-bottom: 90px;
+      &::before {
+        content: "We in Social";
+      }
+    }
+		&__list {
+      display: flex;
+      justify-content: space-between;
+    }
+		&__item {
+      width: 350px;
+      background-color: #252525;
+      border-radius: 6px;
+    }
+		&__item-top {
+      display: flex;
+      align-items: center;
+      padding-bottom: 23px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      margin-left: 45px;
+      border-bottom: 2px solid #303030;
+    }
+		&__item-iocn {
+      border: 2px solid #262626;
+      border-radius: 50%;
+      padding: 8px;
+      margin-right: 20px;
+    }
+		&__item-name {
+      margin-right: 50px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #BFBFBF;
+    }
+		&__item-btn {
+      font-weight: 900;
+      font-size: 10px;
+      line-height: 40px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #737373;
+      border: 2px solid #303030;
+      border-radius: 30px;
+      padding: 0 16px;
+    }
+		&__item-desc {
+      margin-left: 30px;
+      padding-bottom: 20px;
+    }
+		&__item-date {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #737373;
+    }
+		&__item-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      width: 280px;
+    }
+		&__item-author {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $primary;
+    }
+}
 @import 'media';
